@@ -12,6 +12,7 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Navbar() {
             {/* Center Navigation */}
             <nav className="hidden md:flex gap-8 items-center">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className={`relative text-sm font-medium transition-all group ${
@@ -63,7 +64,7 @@ export default function Navbar() {
                         : "w-0 bg-blue-700 group-hover:w-full"
                     }`}
                   ></span>
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -79,20 +80,20 @@ export default function Navbar() {
                   className="object-contain h-18 sm:h-12 w-auto"
                 />
                 <div className="flex gap-2 sm:gap-2.5">
-                  <a
+                  <Link
                     href="#"
                     aria-label="Facebook"
                     className="text-blue-700 hover:text-blue-900 transition"
                   >
                     <Facebook size={16} className="sm:size-4" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     aria-label="Instagram"
                     className="text-blue-700 hover:text-pink-600 transition"
                   >
                     <Instagram size={16} className="sm:size-4" />
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -151,7 +152,7 @@ export default function Navbar() {
                 {/* Navigation links */}
                 <nav className="flex-1 px-4 py-4 space-y-2 overflow-y-auto">
                   {navLinks.map((link) => (
-                    <a
+                    <Link
                       key={link.label}
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
@@ -162,7 +163,7 @@ export default function Navbar() {
                       }`}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
 
@@ -183,20 +184,20 @@ export default function Navbar() {
 
                   {/* Social Media Icons */}
                   <div className="flex justify-center gap-6 py-2">
-                    <a
+                    <Link
                       href="#"
                       aria-label="Facebook"
                       className="text-blue-700 hover:text-blue-900"
                     >
                       <Facebook size={20} />
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       aria-label="Instagram"
                       className="text-blue-700 hover:text-pink-600"
                     >
                       <Instagram size={20} />
-                    </a>
+                    </Link>
                   </div>
 
                   {/* Trustpilot Logo */}

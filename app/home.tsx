@@ -77,13 +77,13 @@ export default function HeroSection() {
             >
               Roof Cleaning, Spraying & Sealing
             </p>
-            <a
+            <Link
               href="#quote"
               className="inline-block bg-white text-black px-5 py-3 text-sm font-semibold rounded hover:bg-gray-100 transition font-openSans"
               style={{ fontFamily: "'Open Sans', sans-serif" }}
             >
               FREE QUOTE FOR YOUR ROOF
-            </a>
+            </Link>
           </div>
 
           {/* Image Content */}
@@ -133,14 +133,14 @@ export default function HeroSection() {
           </p>
 
           {/* Read More Button */}
-          <a
+          <Link
             href="/about"
             className="inline-block mt-4 px-8 py-3 bg-[#F44336] text-white rounded-lg shadow-lg hover:bg-red-600 transition font-semibold font-openSans"
             style={{ fontFamily: "'Open Sans', sans-serif" }}
             aria-label="Read more about SydneyRoofCleaning"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </section>
       {/* Quote Section with Images */}
@@ -387,12 +387,12 @@ export default function HeroSection() {
           <p className="text-lg font-semibold text-center">
             Ready to Give Your Roof a Fresh Look? Get a Free Estimate Today!
           </p>
-          <a
+          <Link
             href="#quote"
             className="bg-white text-[#F44336] font-bold px-6 py-2 rounded hover:bg-gray-100 transition"
           >
             GET A FREE QUOTE NOW!
-          </a>
+          </Link>
         </div>
       </section>
       {/* Roof Cleaning Process */}
