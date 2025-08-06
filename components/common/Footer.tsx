@@ -38,12 +38,12 @@ export default function Footer() {
               We're your local experts with over 10 years experience.
             </p>
             <div className="flex gap-4">
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
+              <Link href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
                 <Facebook size={20} />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
+              </Link>
+              <Link href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
                 <Instagram size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // export const metadata = {
 //   title: "Roof Cleaning Gallery | Before & After Photos",
@@ -115,7 +116,7 @@ export default function GalleryPage() {
         <div className="container mx-auto px-4 py-4 justify-between flex items-center">
           <h1 className="text-white text-xl font-bold">Our Gallery</h1>
           <p className="text-white">
-            <a href="/" className="hover:underline">Home </a> / Gallery
+            <Link href="/" className="hover:underline">Home </Link> / Gallery
           </p>
         </div>
         <hr className="border-white/30 w-full mx-auto" />
@@ -192,18 +193,18 @@ export default function GalleryPage() {
               Get the same professional results for your Sydney home. Contact us today for a free, no-obligation quote.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
+              <Link 
                 href="/contact" 
                 className="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition"
               >
                 Get a Free Quote
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="tel:0212345678" 
                 className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition"
               >
                 Call Now: 02 1234 5678
-              </a>
+              </Link>
             </div>
           </div>
         </div>

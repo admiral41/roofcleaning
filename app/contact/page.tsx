@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import axios from "axios";
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import Link from 'next/link';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -64,7 +65,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 py-4 justify-between flex items-center">
           <h1 className="text-white text-xl font-bold">Contact Us</h1>
           <p className="text-white">
-            <a href="/" className="hover:underline">Home </a> / Contact Us
+            <Link href="/" className="hover:underline">Home </Link> / Contact Us
           </p>
         </div>
         <hr className="border-white/30 w-full mx-auto" />
@@ -102,12 +103,12 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-white/90 uppercase text-sm tracking-wider mb-1">Email</h4>
                     <div className="space-y-1">
-                      <a href="mailto:info@sydneyroofcleaning.com.au" className="block hover:text-blue-200 transition-colors">
+                      <Link href="mailto:info@sydneyroofcleaning.com.au" className="block hover:text-blue-200 transition-colors">
                         info@sydneyroofcleaning.com.au
-                      </a>
-                      <a href="mailto:quotes@sydneyroofcleaning.com.au" className="block hover:text-blue-200 transition-colors">
+                      </Link>
+                      <Link href="mailto:quotes@sydneyroofcleaning.com.au" className="block hover:text-blue-200 transition-colors">
                         quotes@sydneyroofcleaning.com.au
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -120,12 +121,12 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-white/90 uppercase text-sm tracking-wider mb-1">Phone</h4>
                     <div className="space-y-1">
-                      <a href="tel:0212345678" className="block hover:text-blue-200 transition-colors">
+                      <Link href="tel:0212345678" className="block hover:text-blue-200 transition-colors">
                         02 1234 5678
-                      </a>
-                      <a href="tel:0412345678" className="block hover:text-blue-200 transition-colors">
+                      </Link>
+                      <Link href="tel:0412345678" className="block hover:text-blue-200 transition-colors">
                         0412 345 678 (Mobile)
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -166,14 +167,14 @@ const Contact = () => {
                   <p className="text-white/80 text-sm font-medium">FOLLOW US</p>
                 </div>
                 <div className="flex gap-4">
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <Link href="#" target="_blank" rel="noopener noreferrer"
                     className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300">
                     <Facebook className="text-white" size={20} />
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  </Link>
+                  <Link href="#" target="_blank" rel="noopener noreferrer"
                     className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300">
                     <Instagram className="text-white" size={20} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

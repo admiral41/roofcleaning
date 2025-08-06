@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Roof Cleaning Blog | Tips & Advice",
   description: "Read our blog for expert advice on roof maintenance, cleaning tips, and how to extend the life of your roof in Sydney's climate.",
@@ -40,13 +42,13 @@ export default function BlogPage() {
         {blogPosts.map((post) => (
           <article key={post.id} className="border-b pb-6">
             <h2 className="text-2xl font-semibold mb-2">
-              <a href={`/blogs/${post.slug}`} className="hover:text-blue-700">{post.title}</a>
+              <Link href={`/blogs/${post.slug}`} className="hover:text-blue-700">{post.title}</Link>
             </h2>
             <p className="text-gray-500 text-sm mb-3">{post.date}</p>
             <p className="text-gray-700 mb-4">{post.excerpt}</p>
-            <a href={`/blogs/${post.slug}`} className="text-blue-700 font-medium hover:underline">
+            <Link href={`/blogs/${post.slug}`} className="text-blue-700 font-medium hover:underline">
               Read more →
-            </a>
+            </Link>
           </article>
         ))}
       </div>

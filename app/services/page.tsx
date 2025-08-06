@@ -1,5 +1,6 @@
 "use client";
 import { CheckCircle, ShieldCheck, ThumbsUp, Star } from 'lucide-react';
+import Link from 'next/link';
 
 // export const metadata = {
 //   title: "Professional Roof Cleaning Services in Sydney",
@@ -71,7 +72,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 py-4 justify-between flex items-center">
           <h1 className="text-white text-xl font-bold">Our Services</h1>
           <p className="text-white">
-            <a href="/" className="hover:underline">Home </a> / Services
+            <Link href="/" className="hover:underline">Home </Link> / Services
           </p>
         </div>
         <hr className="border-white/30 w-full mx-auto" />
@@ -125,7 +126,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
-                  <a 
+                  <Link
                     href="/contact" 
                     className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center"
                   >
@@ -133,7 +134,7 @@ export default function ServicesPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -147,18 +148,18 @@ export default function ServicesPage() {
                 Contact us today for a free, no-obligation quote. Our Sydney roof cleaning experts are ready to help you protect your home.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a 
+                <Link
                   href="/contact" 
                   className="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition"
                 >
                   Get a Free Quote
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="tel:0212345678" 
                   className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition"
                 >
                   Call Now: 02 1234 5678
-                </a>
+                </Link>
               </div>
             </div>
           </div>

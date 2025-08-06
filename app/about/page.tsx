@@ -1,5 +1,7 @@
 "use client";
 import { CheckCircle, Users, Shield, Award, Home } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 // export const metadata = {
 //   title: "About Sydney Roof Cleaning | Trusted Local Experts",
@@ -37,7 +39,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 py-4 justify-between flex items-center">
           <h1 className="text-white text-xl font-bold">About Us</h1>
           <p className="text-white">
-            <a href="/" className="hover:underline">Home </a> / About Us
+            <Link href="/" className="hover:underline">Home </Link> / About Us
           </p>
         </div>
         <hr className="border-white/30 w-full mx-auto" />
@@ -79,7 +81,7 @@ export default function AboutPage() {
             <div className="lg:w-1/2">
               <div className="bg-gray-100 rounded-xl overflow-hidden aspect-video">
                 {/* Replace with your actual about image */}
-                <img 
+                <Image 
                   src="/about-team.jpg" 
                   alt="Sydney Roof Cleaning Team" 
                   className="w-full h-full object-cover"
@@ -115,18 +117,18 @@ export default function AboutPage() {
                 We take pride in our work and treat every home as if it were our own.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a 
+                <Link 
                   href="/contact" 
                   className="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition"
                 >
                   Contact Our Team
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="tel:0212345678" 
                   className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition"
                 >
                   Call Now: 02 1234 5678
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -500,13 +501,13 @@ export default function HeroSection() {
           <p className="text-gray-700 text-sm mb-10">
             <strong>Roof Wash Team</strong> &nbsp;4.9 Based on 1530 reviews
             &nbsp; | &nbsp;
-            <a href="#" className="underline hover:text-blue-600">
+            <Link href="#" className="underline hover:text-blue-600">
               See all reviews
-            </a>{" "}
+            </Link>{" "}
             &nbsp; | &nbsp;
-            <a href="#" className="underline hover:text-blue-600">
+            <Link href="#" className="underline hover:text-blue-600">
               Write a review
-            </a>
+            </Link>
           </p>
 
           <div className="relative px-12 md:px-20">
