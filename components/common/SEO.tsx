@@ -10,7 +10,7 @@ interface SEOProps {
   ogDescription?: string;
   ogImage?: string;
   ogUrl?: string;
-  structuredData?: any;
+structuredData?: Record<string, unknown>;
 }
 
 export default function SEO({
