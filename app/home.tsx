@@ -248,7 +248,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Roof Sealing */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <img
+              <Image
                 src="/roof-sealing.jpg" // Replace with your actual image path
                 alt="Roof Sealing"
                 className="w-full h-48 object-cover"
@@ -274,7 +274,7 @@ export default function HeroSection() {
 
             {/* Card 2: Roof Spraying */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <img
+              <Image
                 src="/roof-spraying.jpg" // Replace with your actual image path
                 alt="Roof Spraying"
                 className="w-full h-48 object-cover"
@@ -300,7 +300,7 @@ export default function HeroSection() {
 
             {/* Card 3: Roof Cleaning */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <img
+              <Image
                 src="/roof-cleaning.jpg" // Replace with your actual image path
                 alt="Roof Cleaning"
                 className="w-full h-48 object-cover"
@@ -332,17 +332,17 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-0">
           {/* Left 3 Images */}
           <div className="col-span-3 grid grid-cols-1 md:grid-cols-3 h-[350px]">
-            <img
+            <Image
               src="/roof1.png"
               alt="Roof 1"
               className="w-full h-full object-cover"
             />
-            <img
+            <Image
               src="/roof2.png"
               alt="Roof 2"
               className="w-full h-full object-cover"
             />
-            <img
+            <Image
               src="/roof3.png"
               alt="Roof 3"
               className="w-full h-full object-cover"

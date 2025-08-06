@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 const blogPosts = [
   {
@@ -65,7 +66,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </header>
         
         <div className="mb-8">
-          <img 
+          <Image 
             src={post.image} 
             alt={post.title}
             className="w-full h-auto rounded-lg shadow-md"
