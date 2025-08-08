@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and About */}
           <div>
-            <Image
+            <img
               src="/roof-cleaning.png"
               alt="Sydney Roof Cleaning"
               width={180}
@@ -38,12 +38,12 @@ export default function Footer() {
               We're your local experts with over 10 years experience.
             </p>
             <div className="flex gap-4">
-              <Link href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
+              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
                 <Facebook size={20} />
-              </Link>
-              <Link href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
+              </a>
+              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
                 <Instagram size={20} />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -53,9 +53,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
-                  <Link href={service.href} className="text-gray-300 hover:text-white text-sm transition">
+                  <a href={service.href} className="text-gray-300 hover:text-white text-sm transition">
                     {service.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -102,12 +102,12 @@ export default function Footer() {
             © {new Date().getFullYear()} Sydney Roof Cleaning. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition">
+            <a href="/privacy" className="text-gray-400 hover:text-white text-sm transition">
               Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition">
+            </a>
+            <a href="/terms" className="text-gray-400 hover:text-white text-sm transition">
               Terms of Service
-            </Link>
+            </a>
           </div>
         </div>
       </div>

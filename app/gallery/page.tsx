@@ -116,7 +116,7 @@ export default function GalleryPage() {
         <div className="container mx-auto px-4 py-4 justify-between flex items-center">
           <h1 className="text-white text-xl font-bold">Our Gallery</h1>
           <p className="text-white">
-            <Link href="/" className="hover:underline">Home </Link> / Gallery
+            <a href="/" className="hover:underline">Home </a> / Gallery
           </p>
         </div>
         <hr className="border-white/30 w-full mx-auto" />
@@ -166,10 +166,9 @@ export default function GalleryPage() {
                 onClick={() => openLightbox(item)}
               >
                 <div className="relative aspect-video">
-                  <Image
+                  <img
                     src={item.before}
                     alt={`Before: ${item.title}`}
-                    fill
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-blue-800/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
@@ -193,18 +192,18 @@ export default function GalleryPage() {
               Get the same professional results for your Sydney home. Contact us today for a free, no-obligation quote.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link 
+              <a 
                 href="/contact" 
                 className="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition"
               >
                 Get a Free Quote
-              </Link>
-              <Link 
+              </a>
+              <a 
                 href="tel:0212345678" 
                 className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10 transition"
               >
                 Call Now: 02 1234 5678
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -228,10 +227,10 @@ export default function GalleryPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <div className="relative aspect-video bg-gray-800 rounded-t-lg overflow-hidden">
-                  <Image
+                  <img
                     src={selectedImage.before}
                     alt={`Before: ${selectedImage.title}`}
-                    fill
+                    
                     className="object-cover"
                   />
                 </div>
@@ -241,10 +240,10 @@ export default function GalleryPage() {
               </div>
               <div>
                 <div className="relative aspect-video bg-gray-800 rounded-t-lg overflow-hidden">
-                  <Image
+                  <img
                     src={selectedImage.after}
                     alt={`After: ${selectedImage.title}`}
-                    fill
+                    
                     className="object-cover"
                   />
                 </div>

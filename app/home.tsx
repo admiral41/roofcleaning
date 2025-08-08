@@ -77,18 +77,18 @@ export default function HeroSection() {
             >
               Roof Cleaning, Spraying & Sealing
             </p>
-            <Link
+            <a
               href="#quote"
               className="inline-block bg-white text-black px-5 py-3 text-sm font-semibold rounded hover:bg-gray-100 transition font-openSans"
               style={{ fontFamily: "'Open Sans', sans-serif" }}
             >
               FREE QUOTE FOR YOUR ROOF
-            </Link>
+            </a>
           </div>
 
           {/* Image Content */}
           <div className="w-full">
-            <Image
+            <img
               src="/roof-cleaning-sample.jpg"
               alt="Roof Cleaning"
               width={800}
@@ -133,14 +133,14 @@ export default function HeroSection() {
           </p>
 
           {/* Read More Button */}
-          <Link
+          <a
             href="/about"
             className="inline-block mt-4 px-8 py-3 bg-[#F44336] text-white rounded-lg shadow-lg hover:bg-red-600 transition font-semibold font-openSans"
             style={{ fontFamily: "'Open Sans', sans-serif" }}
             aria-label="Read more about SydneyRoofCleaning"
           >
             Read More
-          </Link>
+          </a>
         </div>
       </section>
       {/* Quote Section with Images */}
@@ -148,7 +148,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
           {/* Left Image - Full width, flush left */}
           <div className="h-[450px] w-full">
-            <Image
+            <img
               src="/left-roof-cleaning.jpg" // Replace with your image path
               alt="Roof Cleaning Left"
               width={600}
@@ -225,7 +225,7 @@ export default function HeroSection() {
 
           {/* Right Image - Full width, flush right */}
           <div className="h-[450px] w-full">
-            <Image
+            <img
               src="/right-roof-cleaning.jpg" // Replace with your image path
               alt="Roof Cleaning Right"
               width={600}
@@ -248,7 +248,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Roof Sealing */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <Image
+              <img
                 src="/roof-sealing.jpg" // Replace with your actual image path
                 alt="Roof Sealing"
                 className="w-full h-48 object-cover"
@@ -274,7 +274,7 @@ export default function HeroSection() {
 
             {/* Card 2: Roof Spraying */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <Image
+              <img
                 src="/roof-spraying.jpg" // Replace with your actual image path
                 alt="Roof Spraying"
                 className="w-full h-48 object-cover"
@@ -300,7 +300,7 @@ export default function HeroSection() {
 
             {/* Card 3: Roof Cleaning */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-              <Image
+              <img
                 src="/roof-cleaning.jpg" // Replace with your actual image path
                 alt="Roof Cleaning"
                 className="w-full h-48 object-cover"
@@ -332,17 +332,17 @@ export default function HeroSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-0">
           {/* Left 3 Images */}
           <div className="col-span-3 grid grid-cols-1 md:grid-cols-3 h-[350px]">
-            <Image
+            <img
               src="/roof1.png"
               alt="Roof 1"
               className="w-full h-full object-cover"
             />
-            <Image
+            <img
               src="/roof2.png"
               alt="Roof 2"
               className="w-full h-full object-cover"
             />
-            <Image
+            <img
               src="/roof3.png"
               alt="Roof 3"
               className="w-full h-full object-cover"
@@ -387,12 +387,12 @@ export default function HeroSection() {
           <p className="text-lg font-semibold text-center">
             Ready to Give Your Roof a Fresh Look? Get a Free Estimate Today!
           </p>
-          <Link
+          <a
             href="#quote"
             className="bg-white text-[#F44336] font-bold px-6 py-2 rounded hover:bg-gray-100 transition"
           >
             GET A FREE QUOTE NOW!
-          </Link>
+          </a>
         </div>
       </section>
       {/* Roof Cleaning Process */}
@@ -478,19 +478,19 @@ export default function HeroSection() {
           </div>
 
           <div className="flex justify-center gap-8 mb-8 flex-wrap">
-            <Image
+            <img
               src="/google_logo.png"
               alt="Google Reviews"
               width={120}
               height={20}
             />
-            <Image
+            <img
               src="/facebook_review.png"
               alt="Facebook Reviews"
               width={120}
               height={20}
             />
-            <Image
+            <img
               src="/trustpilot-logo.png"
               alt="Trustpilot Reviews"
               width={120}
@@ -501,13 +501,13 @@ export default function HeroSection() {
           <p className="text-gray-700 text-sm mb-10">
             <strong>Roof Wash Team</strong> &nbsp;4.9 Based on 1530 reviews
             &nbsp; | &nbsp;
-            <Link href="#" className="underline hover:text-blue-600">
+            <a href="#" className="underline hover:text-blue-600">
               See all reviews
-            </Link>{" "}
+            </a>{" "}
             &nbsp; | &nbsp;
-            <Link href="#" className="underline hover:text-blue-600">
+            <a href="#" className="underline hover:text-blue-600">
               Write a review
-            </Link>
+            </a>
           </p>
 
           <div className="relative px-12 md:px-20">
@@ -589,10 +589,10 @@ export default function HeroSection() {
                 className="bg-white border rounded-lg shadow hover:shadow-md transition"
               >
                 <div className="relative h-48 w-full">
-                  <Image
+                  <img
                     src={blog.image}
                     alt={blog.title}
-                    fill
+                    
                     className="object-cover rounded-t-lg"
                   />
                 </div>
